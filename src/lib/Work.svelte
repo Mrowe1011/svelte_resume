@@ -1,32 +1,47 @@
-<div>
+<script>
+    import { fade, blur, fly, slide, scale } from "svelte/transition";
+    import { onMount } from 'svelte';
 
-    <div id="Keybank">
+    let ready = false;
+    onMount(() => ready = true);
+</script>
+
+{#if ready}
+<div>
+    <div in:fly="{{ x: 200, duration: 500 }}" out:slide id="Keybank">
         <h1>Keybank DevOps Enginner Intern</h1>
         <h2>Jun 2022 - Aug 2022 (3 months)</h2>
         <p>
             I did that bruh
         </p>
     </div>
-<hr>
-    <div id="Cohen">
+    <hr in:fly="{{ x: 200, duration: 500 }}" out:slide>
+    <div in:fly="{{ x: 200, duration: 600 }}" out:slide id="Kent">
+        <h1>Electronics Lab Lead Design and Innovation Hub Kent State</h1>
+        <h2>Jan 2022 - Apr 2022 (4 months)</h2>
+        <p>I also did this bruh</p>
+    </div>
+    <hr in:fly="{{ x: 200, duration: 600 }}" out:slide>
+
+    <div in:fly="{{ x: 200, duration: 700 }}" out:slide id="Cohen">
     <h1>
         Cohen & Company Summer End User Technology Intern
     </h1>
     <h2>
-        May 2021 – Aug 2021 (4 months)
+        May 2021 - Aug 2021 (4 months)
     </h2>
     <p>My main duties were imaging laptops for new and existing users and then assisting them with anything they needed. This includes hardware, software, and even general tech advice. I had other auxiliary duties in this role like creating and maintaining organization systems for storage rooms, creating PowerShell scripts to ease imaging, and documenting fix processes to create knowledge base articles. I was also selected to travel to a new office and assist with its standup over the course of three days. In this position I was paired with another intern and two people who oversaw me.</p>
        
 </div>
-<hr>
-<div id="Riverside">
+<hr in:fly="{{ x: 200, duration: 700 }}" out:slide>
+<div in:fly="{{ x: 200, duration: 700 }}" out:slide id="Riverside">
     <h1>Riverside Local Schools IT Intern</h1>
     <h2>June 2018 - July 2020 (2 years 2 months)</h2>
     <p>My duties in this position gradually built up over time as I progressed through my internship. I started with learning how to fix hardware. This included fixing things like Chrome Books, Windows laptops, and Windows desktops. I would do everything from replacing motherboards to something as simple as replacing keys. After learning hardware skills, I was taught software skills like how to image PCs through windows deployment services and general troubleshooting for programs we used like SMART and other educational software. After I had these two foundational skills mastered, I started completing tickets like a normal break fix tech would. I assisted users and explained to them what I was doing in a way that made it understandable to them. After I became familiar with general end user ticketing, I started getting assigned networking tasks. One of my first projects was setting up a PC lab for design students. I ran cables and worked with an upper-level tech to configure a Cisco switch for the room. Towards the end of my internship, I began working on creating a Windows 10 image for our computers with Microsoft Deployment Toolkit on their Windows 2006 server running WDS.</p>
 
 </div>
 </div>
-
+{/if}
 <style>
     div {
     background-color:rgba(41, 41, 41, 0.679);
