@@ -6,7 +6,7 @@
     onMount(() => ready = true);
 </script>
 
-{#if ready}
+{#if ready} sssss
 <div>
     <div in:fly="{{ x: 200, duration: 500 }}" out:slide id="Keybank">
         <h1>Keybank DevOps Enginner Intern</h1>
