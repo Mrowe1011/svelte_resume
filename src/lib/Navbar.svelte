@@ -1,7 +1,8 @@
 <script>
 	import Work from "./Work.svelte";
 	import Tools from "./Tools.svelte";
-    import Volunteer from "./Volunteer.svelte"
+    import Volunteer from "./Projects.svelte"
+    import Clubs from "./clubs.svelte";
 
     export let menu = 1;
 </script>
@@ -37,10 +38,8 @@
 <Tools />
 {:else if menu === 3}
 <Volunteer />
-{:else}
-<h1>
-	Page Not Found
-</h1>
+{:else if menu === 4}
+<Clubs />
 {/if}
 
 

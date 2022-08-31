@@ -3,6 +3,8 @@
     import { onMount } from 'svelte';
     export let keybank = 0;
     export let kent = 0;
+    export let cohen = 0;
+    export let riverside = 0;
     let ready = false;
     onMount(() => ready = true);
 </script>
@@ -34,7 +36,7 @@
         </ul>
         {/if}
     </div>
-    <hr in:fly="{{ x: 200, duration: 500 }}" out:slide>
+    <hr in:fly="{{ x: 200, duration: 550 }}" out:slide>
 
 
     <div in:fly="{{ x: 200, duration: 600 }}" out:slide id="Kent">
@@ -46,42 +48,73 @@
             <li><a href="/" on:click|preventDefault={() => (kent = 2)}>Tools I worked with</a></li>
         </ul>
         {#if kent === 1}
-        <p>I was on the CI/CD team at Keybank's Devops department. Our team was spearheading the transition to the Google Cloud Platform while also migrating our current GIT provider from bitbucket to GitLab. My main task was migrating development artifacts from Sonatype Nexus to Jfrog Artifactory.  I was moving both files and helping transition development processes like Jenkins jobs and XebiaLabs release jobs. I also got to sit in on much of the GCP transition and got to see how Ansible was deployed to the cloud. While I was waiting for development teams I spent my time developing python tools that could save the team time in the future. Finally, I solved a long standing issue and optimized an old jython file that generated the stages of a deployment in XLR. The problem the team faced was that the file could not exceed 100kb so I learned how the script worked and split it into 2 files and imported functions as needed.</p>
+        <p>During the school year I took an interest in my university’s soldering lab to work on some of my projects. After expressing interest in the lab, I was offered a position to run it because no one had for about 6 months. I stood up this lab from a place of inactivity to a functioning lab used by students and faculty. I created a list of tools needed to create the perfect surface mount component workshop and set up the lab in accordance to fume extraction and saftey rules. I gave life back to the lab by reaching out to Kent professors to create workshops for students within the lab. As a contribution to the Di Hub I created a doorbell to send an alert to Microsoft teams when someone entered the door.</p>
         {:else if kent === 2}
         <ul>
-            <li>GIT</li>
-            <li>Jira</li>
-            <li>Confluence</li>
             <li>Python</li>
-            <li>Jython</li>
-            <li>Jenkin's Groovy</li>
-            <li>Jfrog Artifactory</li>
-            <li>Sonatype Nexus</li>
-            <li>XebiaLabs Release</li>
-            <li>XebiaLabs Deploy</li>
+            <li>Raspberry Pi's</li>
+            <li>Integrated C</li>
+            <li>Arduinos</li>
+            <li>LillyPad Sewable Electronics</li>
+            <li>Capacitors, Resistors, and other SMDs</li>
+            <li>Voltera V-One PCB printer</li>
+            <li>Multimeters</li>
+            <li>3D Printing</li>
+            <li>Fusion 360 3D Modeling</li>
         </ul>
         {/if}
     </div>
-    <hr in:fly="{{ x: 200, duration: 600 }}" out:slide>
+    <hr in:fly="{{ x: 200, duration: 650 }}" out:slide>
 
+    <div in:fly="{{ x: 200, duration: 700 }}" out:slide id="cohen">
+        <h1>Cohen & Company Summer End User Technology Intern</h1>
+        <h2>May 2021 - Aug 2021 (4 months)</h2>
+        <ul class="menu">
+            <li><a href="/" on:click|preventDefault={() => (cohen = 1)}>Job Description </a></li> 
+            <li class="dot"><a href="/" on:click|preventDefault={() => (cohen = 0)}> • </a></li>
+            <li><a href="/" on:click|preventDefault={() => (cohen = 2)}>Tools I worked with</a></li>
+        </ul>
+        {#if cohen === 1}
+        <p>My main duties were imaging laptops for new and existing users and then assisting them with anything they needed. This includes hardware, software, and even general tech advice. I had other auxiliary duties in this role like creating and maintaining organization systems for storage rooms, creating PowerShell scripts to ease imaging, and documenting fix processes to create knowledge base articles. I was also selected to travel to a new office and assist with its standup over the course of three days. In this position I was paired with another intern and two people who oversaw me.</p>
+        {:else if cohen === 2}
+        <ul>
+            <li>PowerShell</li>
+            <li>Jira</li>
+            <li>Confluence</li>
+            <li>Cisco Meraki</li>
+            <li>Microsoft WDS, MDT</li>
+            <li>Laptop Repair</li>
+            <li>Windows Troubleshooting</li>
+            <li>Teamviewer</li>
+            <li>Office Standup</li>
+        </ul>
+        {/if}
 
-    <div in:fly="{{ x: 200, duration: 700 }}" out:slide id="Cohen">
-    <h1>
-        Cohen & Company Summer End User Technology Intern
-    </h1>
-    <h2>
-        May 2021 - Aug 2021 (4 months)
-    </h2>
-    <p>My main duties were imaging laptops for new and existing users and then assisting them with anything they needed. This includes hardware, software, and even general tech advice. I had other auxiliary duties in this role like creating and maintaining organization systems for storage rooms, creating PowerShell scripts to ease imaging, and documenting fix processes to create knowledge base articles. I was also selected to travel to a new office and assist with its standup over the course of three days. In this position I was paired with another intern and two people who oversaw me.</p>
-       
-</div>
-<hr in:fly="{{ x: 200, duration: 700 }}" out:slide>
-<div in:fly="{{ x: 200, duration: 700 }}" out:slide id="Riverside">
-    <h1>Riverside Local Schools IT Intern</h1>
-    <h2>June 2018 - July 2020 (2 years 2 months)</h2>
-    <p>My duties in this position gradually built up over time as I progressed through my internship. I started with learning how to fix hardware. This included fixing things like Chrome Books, Windows laptops, and Windows desktops. I would do everything from replacing motherboards to something as simple as replacing keys. After learning hardware skills, I was taught software skills like how to image PCs through windows deployment services and general troubleshooting for programs we used like SMART and other educational software. After I had these two foundational skills mastered, I started completing tickets like a normal break fix tech would. I assisted users and explained to them what I was doing in a way that made it understandable to them. After I became familiar with general end user ticketing, I started getting assigned networking tasks. One of my first projects was setting up a PC lab for design students. I ran cables and worked with an upper-level tech to configure a Cisco switch for the room. Towards the end of my internship, I began working on creating a Windows 10 image for our computers with Microsoft Deployment Toolkit on their Windows 2006 server running WDS.</p>
+    </div>
+    <hr in:fly="{{ x: 200, duration: 750 }}" out:slide>
 
-</div>
+    <div in:fly="{{ x: 200, duration: 800 }}" out:slide id="riverside">
+        <h1>Riverside Local Schools IT Intern</h1>
+        <h2>June 2018 - July 2020 (2 years 2 months)</h2>
+        <ul class="menu">
+            <li><a href="/" on:click|preventDefault={() => (riverside = 1)}>Job Description </a></li> 
+            <li class="dot"><a href="/" on:click|preventDefault={() => (riverside = 0)}> • </a></li>
+            <li><a href="/" on:click|preventDefault={() => (riverside = 2)}>Tools I worked with</a></li>
+        </ul>
+        {#if riverside === 1}
+        <p>My duties in this position gradually built up over time as I progressed through my internship. I started with learning how to fix hardware. This included fixing things like Chrome Books, Windows laptops, and Windows desktops. I would do everything from replacing motherboards to something as simple as replacing keys. After learning hardware skills, I was taught software skills like how to image PCs through windows deployment services and general troubleshooting for programs we used like SMART and other educational software. After I had these two foundational skills mastered, I started completing tickets like a normal break fix tech would. I assisted users and explained to them what I was doing in a way that made it understandable to them. After I became familiar with general end user ticketing, I started getting assigned networking tasks. One of my first projects was setting up a PC lab for design students. I ran cables and worked with an upper-level tech to configure a Cisco switch for the room. Towards the end of my internship, I began working on creating a Windows 10 image for our computers with Microsoft Deployment Toolkit on their Windows 2006 server running WDS.</p>
+        {:else if riverside === 2}
+        <ul>
+            <li>Batch</li>
+            <li>Microsoft WDS, MDT</li>
+            <li>Laptop Repair</li>
+            <li>Windows Troubleshooting</li>
+            <li>Teamviewer</li>
+            <li>Office Standup</li>
+        </ul>
+        {/if}
+
+    </div>
 </div>
 {/if}
 <style>
