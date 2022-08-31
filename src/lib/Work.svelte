@@ -1,7 +1,8 @@
 <script>
     import { fade, blur, fly, slide, scale } from "svelte/transition";
     import { onMount } from 'svelte';
-
+    export let keybank = 0;
+    export let kent = 0;
     let ready = false;
     onMount(() => ready = true);
 </script>
@@ -11,17 +12,58 @@
     <div in:fly="{{ x: 200, duration: 500 }}" out:slide id="Keybank">
         <h1>Keybank DevOps Enginner Intern</h1>
         <h2>Jun 2022 - Aug 2022 (3 months)</h2>
-        <p>
-            I did that bruh
-        </p>
+        <ul class="menu">
+            <li><a href="/" on:click|preventDefault={() => (keybank = 1)}>Job Description </a></li> 
+            <li class="dot"><a href="/" on:click|preventDefault={() => (keybank = 0)}> • </a></li>
+            <li><a href="/" on:click|preventDefault={() => (keybank = 2)}>Tools I worked with</a></li>
+        </ul>
+        {#if keybank === 1}
+        <p>I was on the CI/CD team at Keybank's Devops department. Our team was spearheading the transition to the Google Cloud Platform while also migrating our current GIT provider from bitbucket to GitLab. My main task was migrating development artifacts from Sonatype Nexus to Jfrog Artifactory.  I was moving both files and helping transition development processes like Jenkins jobs and XebiaLabs release jobs. I also got to sit in on much of the GCP transition and got to see how Ansible was deployed to the cloud. While I was waiting for development teams I spent my time developing python tools that could save the team time in the future. Finally, I solved a long standing issue and optimized an old jython file that generated the stages of a deployment in XLR. The problem the team faced was that the file could not exceed 100kb so I learned how the script worked and split it into 2 files and imported functions as needed.</p>
+        {:else if keybank === 2}
+        <ul>
+            <li>GIT</li>
+            <li>Jira</li>
+            <li>Confluence</li>
+            <li>Python</li>
+            <li>Jython</li>
+            <li>Jenkin's Groovy</li>
+            <li>Jfrog Artifactory</li>
+            <li>Sonatype Nexus</li>
+            <li>XebiaLabs Release</li>
+            <li>XebiaLabs Deploy</li>
+        </ul>
+        {/if}
     </div>
     <hr in:fly="{{ x: 200, duration: 500 }}" out:slide>
+
+
     <div in:fly="{{ x: 200, duration: 600 }}" out:slide id="Kent">
         <h1>Electronics Lab Lead Design and Innovation Hub Kent State</h1>
         <h2>Jan 2022 - Apr 2022 (4 months)</h2>
-        <p>I also did this bruh</p>
+        <ul class="menu">
+            <li><a href="/" on:click|preventDefault={() => (kent = 1)}>Job Description </a></li> 
+            <li class="dot"><a href="/" on:click|preventDefault={() => (kent = 0)}> • </a></li>
+            <li><a href="/" on:click|preventDefault={() => (kent = 2)}>Tools I worked with</a></li>
+        </ul>
+        {#if kent === 1}
+        <p>I was on the CI/CD team at Keybank's Devops department. Our team was spearheading the transition to the Google Cloud Platform while also migrating our current GIT provider from bitbucket to GitLab. My main task was migrating development artifacts from Sonatype Nexus to Jfrog Artifactory.  I was moving both files and helping transition development processes like Jenkins jobs and XebiaLabs release jobs. I also got to sit in on much of the GCP transition and got to see how Ansible was deployed to the cloud. While I was waiting for development teams I spent my time developing python tools that could save the team time in the future. Finally, I solved a long standing issue and optimized an old jython file that generated the stages of a deployment in XLR. The problem the team faced was that the file could not exceed 100kb so I learned how the script worked and split it into 2 files and imported functions as needed.</p>
+        {:else if kent === 2}
+        <ul>
+            <li>GIT</li>
+            <li>Jira</li>
+            <li>Confluence</li>
+            <li>Python</li>
+            <li>Jython</li>
+            <li>Jenkin's Groovy</li>
+            <li>Jfrog Artifactory</li>
+            <li>Sonatype Nexus</li>
+            <li>XebiaLabs Release</li>
+            <li>XebiaLabs Deploy</li>
+        </ul>
+        {/if}
     </div>
     <hr in:fly="{{ x: 200, duration: 600 }}" out:slide>
+
 
     <div in:fly="{{ x: 200, duration: 700 }}" out:slide id="Cohen">
     <h1>
@@ -47,4 +89,28 @@
     background-color:rgba(41, 41, 41, 0.679);
     padding: 1%;
     }
+    ul.menu li{
+        display : inline;
+    }
+.menu a {
+
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    list-style: none;
+
+    text-align: center;
+    
+}
+a, a:hover, a:active, a:visited {
+     color: white;
+ }
+
+ .dot {
+     margin-left: 1%;
+     margin-right: 1%;
+ }
 </style>
