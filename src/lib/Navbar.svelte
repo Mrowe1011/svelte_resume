@@ -15,7 +15,7 @@
             <h2>My name is Kevin Bahner.</h2>
         </div>
 
-        <h4 id="socials"> <a href = "mailto: kevbahner@gmail.com" target="_blank">kevbahner@gmail.com</a> | <a href="https://www.linkedin.com/in/kevin-bahner-b313641a2/" target="_blank">LinkedIn</a></h4>
+        <h4 id="socials"> <a href = "mailto: kevbahner@gmail.com" target="_blank">kevbahner@gmail.com</a> | <a href="https://www.linkedin.com/in/kevin-bahner-b313641a2/" target="_blank">LinkedIn</a> | <a href="https://github.com/Mrowe1011" target="_blank">GitHub</a></h4>
 
     </div>
 

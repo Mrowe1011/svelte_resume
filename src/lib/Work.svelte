@@ -20,7 +20,9 @@
             <li><a href="/" on:click|preventDefault={() => (keybank = 2)}>Tools I worked with</a></li>
         </ul>
         {#if keybank === 1}
-        <p>I was on the CI/CD team at Keybank's Devops department. Our team was spearheading the transition to the Google Cloud Platform while also migrating our current GIT provider from bitbucket to GitLab. My main task was migrating development artifacts from Sonatype Nexus to Jfrog Artifactory.  I was moving both files and helping transition development processes like Jenkins jobs and XebiaLabs release jobs. I also got to sit in on much of the GCP transition and got to see how Ansible was deployed to the cloud. While I was waiting for development teams I spent my time developing python tools that could save the team time in the future. Finally, I solved a long standing issue and optimized an old jython file that generated the stages of a deployment in XLR. The problem the team faced was that the file could not exceed 100kb so I learned how the script worked and split it into 2 files and imported functions as needed.</p>
+        <p>
+            Created value within the Continuous Integration and Deployment team at KeyBank by leveraging my knowledge of Python and GIT to create automated processes. I continuously learned new platforms to better enhance the development experience across the company’s development teams.
+        </p>
         {:else if keybank === 2}
         <ul>
             <li>GIT</li>
@@ -48,7 +50,9 @@
             <li><a href="/" on:click|preventDefault={() => (kent = 2)}>Tools I worked with</a></li>
         </ul>
         {#if kent === 1}
-        <p>During the school year I took an interest in my university’s soldering lab to work on some of my projects. After expressing interest in the lab, I was offered a position to run it since it had been left vacant for 6 months. I took it from a place of inactivity to a functioning lab used by students and faculty. I set up the lab in accordance to fume extraction and safety rules. I gave life back to the lab by reaching out to Kent professors to create workshops for students within the lab. I also created a doorbell to send an alert to Microsoft Teams when someone entered the door.</p>
+        <p>
+            I revived the Electronics lab within Kent State’s Design and Innovation Hub from a place of inactivity to a functional lab by marketing it to both students and faculty across Kent’s campus.  I created value across departments by collaborating with the school of fashion to create electronics that can be sewed.
+        </p>
         {:else if kent === 2}
         <ul>
             <li>Python</li>
@@ -75,7 +79,9 @@
             <li><a href="/" on:click|preventDefault={() => (cohen = 2)}>Tools I worked with</a></li>
         </ul>
         {#if cohen === 1}
-        <p>My main duties were imaging laptops for new and existing users and then assisting them with anything they needed. This includes hardware, software, and even general tech advice. I had other auxiliary duties in this role like creating and maintaining organization systems for storage rooms, creating PowerShell scripts to ease imaging, and documenting fix processes to create knowledge base articles. I was also selected to travel to a new office and assist with its standup over the course of three days. In this position I was paired with another intern and two people who oversaw me.</p>
+        <p>
+            I was entrusted to deploy, manage, and repair any user’s laptop or computer within the company. I created additional value by going beyond what was expected of me and created automation to streamline the windows deployment process.
+        </p>
         {:else if cohen === 2}
         <ul>
             <li>PowerShell</li>
@@ -102,10 +108,12 @@
             <li><a href="/" on:click|preventDefault={() => (riverside = 2)}>Tools I worked with</a></li>
         </ul>
         {#if riverside === 1}
-        <p>My duties in this position gradually built up over time as I progressed through my internship. I started with learning how to fix hardware. This included fixing things like Chrome Books, Windows laptops, and Windows desktops. I would do everything from replacing motherboards to something as simple as replacing keys. After learning hardware skills, I was taught software skills like how to image PCs through windows deployment services and general troubleshooting for programs we used like SMART and other educational software. After I had these two foundational skills mastered, I started completing tickets like a normal break fix tech would. I assisted users and explained to them what I was doing in a way that made it understandable to them. After I became familiar with general end user ticketing, I started getting assigned networking tasks. One of my first projects was setting up a PC lab for design students. I ran cables and worked with an upper-level tech to configure a Cisco switch for the room. Towards the end of my internship, I began working on creating a Windows 10 image for our computers with Microsoft Deployment Toolkit on their Windows 2006 server running WDS.</p>
+        <p>
+            I was entrusted to deploy, manage, and repair any user’s laptop or computer within the school district. I created additional value by going beyond what was expected of me and created automation to streamline the windows deployment process.
+        </p>
         {:else if riverside === 2}
         <ul>
-            <li>Batch</li>
+            <li>Batch Scripting</li>
             <li>Microsoft WDS, MDT</li>
             <li>Laptop Repair</li>
             <li>Windows Troubleshooting</li>
@@ -125,9 +133,13 @@
     ul.menu li{
         display : inline;
     }
-.menu a {
+    img {
+        width: 50%;
+        height: 80%;
+        display: block;
+        margin: auto;
 
-}
+    }
 
 .menu {
     width: 100%;

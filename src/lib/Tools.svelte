@@ -16,7 +16,6 @@
     <li>Jython</li>
     <li>Powershell</li>
     <li>Jenkins Groovy</li>
-    <li>Powershell</li>
     <li>Javascript</li>
     <li>HTML</li>
     <li>CSS</li>
