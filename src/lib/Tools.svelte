@@ -52,13 +52,16 @@
 </div>
 {/if}
 <style>
-.container {
-    display: flex;
-}
+    @media only screen and (min-width: 513px) {
+        .container {
+            display: flex;
+        }
 
-.block {
-    flex: 1 1 0;
-}
+        .block {
+            flex: 1 1 0;
+        }
+    }
+
 ul {
     list-style-type: none;
 }

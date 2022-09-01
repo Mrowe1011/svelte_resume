@@ -16,7 +16,7 @@
         <ul class="menu">
             <li><a href="/" on:click|preventDefault={() => (website = 1)}>Project Description </a></li> 
             <li class="dot"><a href="/" on:click|preventDefault={() => (website = 0)}> • </a></li>
-            <li><a href="https://github.com/Mrowe1011/svelte_resume">Github</a></li>
+            <li><a target="_blank" href="https://github.com/Mrowe1011/svelte_resume">Github</a></li>
         </ul>
         {#if website === 1}
         <p>This website was built from scratch using the Svelte Javascript framework. Check out my GitHub page to see my progress as I was developing the website.</p>
@@ -32,7 +32,7 @@
         <ul class="menu">
             <li><a href="/" on:click|preventDefault={() => (doorbell = 1)}>Project Description </a></li> 
             <li class="dot"><a href="/" on:click|preventDefault={() => (doorbell = 0)}> • </a></li>
-            <li><a href="https://github.com/Mrowe1011/doorbell">Github</a></li>
+            <li><a target="_blank" href="https://github.com/Mrowe1011/doorbell">Github</a></li>
         </ul>
         {#if doorbell === 1}
         <p>While working at the Design and Innovation’s electronics lab I solved a standing issue they had of not knowing when people came into the space. I leveraged a Raspberry Pi, laser, Light Dependent Resistor, Python, and a Microsoft teams API to send a message to a MS teams channel every time a person broke the laser’s beam. Check out the GIT repository to see how it works!</p>

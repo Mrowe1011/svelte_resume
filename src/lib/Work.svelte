@@ -11,7 +11,7 @@
 
 {#if ready}
 <div>
-    <div in:fly="{{ x: 200, duration: 500 }}" out:slide id="Keybank">
+    <div in:fly="{{ x: 200, duration: 500 }}" id="Keybank">
         <h1>Keybank DevOps Enginner Intern</h1>
         <h2>Jun 2022 - Aug 2022 (3 months)</h2>
         <ul class="menu">
@@ -36,10 +36,10 @@
         </ul>
         {/if}
     </div>
-    <hr in:fly="{{ x: 200, duration: 550 }}" out:slide>
+    <hr in:fly="{{ x: 200, duration: 550 }}" >
 
 
-    <div in:fly="{{ x: 200, duration: 600 }}" out:slide id="Kent">
+    <div in:fly="{{ x: 200, duration: 600 }}"  id="Kent">
         <h1>Electronics Lab Lead Design and Innovation Hub Kent State</h1>
         <h2>Jan 2022 - Apr 2022 (4 months)</h2>
         <ul class="menu">
@@ -48,7 +48,7 @@
             <li><a href="/" on:click|preventDefault={() => (kent = 2)}>Tools I worked with</a></li>
         </ul>
         {#if kent === 1}
-        <p>During the school year I took an interest in my university’s soldering lab to work on some of my projects. After expressing interest in the lab, I was offered a position to run it because no one had for about 6 months. I stood up this lab from a place of inactivity to a functioning lab used by students and faculty. I created a list of tools needed to create the perfect surface mount component workshop and set up the lab in accordance to fume extraction and saftey rules. I gave life back to the lab by reaching out to Kent professors to create workshops for students within the lab. As a contribution to the Di Hub I created a doorbell to send an alert to Microsoft teams when someone entered the door.</p>
+        <p>During the school year I took an interest in my university’s soldering lab to work on some of my projects. After expressing interest in the lab, I was offered a position to run it since it had been left vacant for 6 months. I took it from a place of inactivity to a functioning lab used by students and faculty. I set up the lab in accordance to fume extraction and safety rules. I gave life back to the lab by reaching out to Kent professors to create workshops for students within the lab. I also created a doorbell to send an alert to Microsoft Teams when someone entered the door.</p>
         {:else if kent === 2}
         <ul>
             <li>Python</li>
@@ -64,9 +64,9 @@
         </ul>
         {/if}
     </div>
-    <hr in:fly="{{ x: 200, duration: 650 }}" out:slide>
+    <hr in:fly="{{ x: 200, duration: 650 }}" >
 
-    <div in:fly="{{ x: 200, duration: 700 }}" out:slide id="cohen">
+    <div in:fly="{{ x: 200, duration: 700 }}"  id="cohen">
         <h1>Cohen & Company Summer End User Technology Intern</h1>
         <h2>May 2021 - Aug 2021 (4 months)</h2>
         <ul class="menu">
@@ -91,9 +91,9 @@
         {/if}
 
     </div>
-    <hr in:fly="{{ x: 200, duration: 750 }}" out:slide>
+    <hr in:fly="{{ x: 200, duration: 750 }}" >
 
-    <div in:fly="{{ x: 200, duration: 800 }}" out:slide id="riverside">
+    <div in:fly="{{ x: 200, duration: 800 }}"  id="riverside">
         <h1>Riverside Local Schools IT Intern</h1>
         <h2>June 2018 - July 2020 (2 years 2 months)</h2>
         <ul class="menu">

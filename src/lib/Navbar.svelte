@@ -3,7 +3,7 @@
 	import Tools from "./Tools.svelte";
     import Volunteer from "./Projects.svelte"
     import Clubs from "./clubs.svelte";
-
+    import Education from "./Education.svelte";
     export let menu = 1;
 </script>
 
@@ -15,14 +15,15 @@
             <h2>My name is Kevin Bahner.</h2>
         </div>
 
-        <h4 id="socials"> <a href = "mailto: kevbahner@gmail.com">kevbahner@gmail.com</a> | <a href="https://www.linkedin.com/in/kevin-bahner-b313641a2/">LinkedIn</a> | <a href="https://www.instagram.com/kevbahner/">Instagram</a></h4>
+        <h4 id="socials"> <a href = "mailto: kevbahner@gmail.com" target="_blank">kevbahner@gmail.com</a> | <a href="https://www.linkedin.com/in/kevin-bahner-b313641a2/" target="_blank">LinkedIn</a></h4>
 
     </div>
 
     <hr>
         <div id="navbar">
             <ul id="menu">
-                <li><a href="/" on:click|preventDefault={() => (menu = 1)}>Work Expirence</a></li> 
+                <li><a href="/" on:click|preventDefault={() => (menu = 1)}>Work Experience</a></li> 
+                <li><a href="/" on:click|preventDefault={() => (menu = 5)}>Education</a></li>
                 <li><a href="/" on:click|preventDefault={() => (menu = 2)}>Skills</a></li>
                 <li><a href="/" on:click|preventDefault={() => (menu = 3)}>Projects</a></li>
                 <li><a href="/" on:click|preventDefault={() => (menu = 4)}>Clubs</a></li>
@@ -40,6 +41,8 @@
 <Volunteer />
 {:else if menu === 4}
 <Clubs />
+{:else if menu === 5}
+<Education />
 {/if}
 
 
@@ -88,6 +91,7 @@ ul#menu li{
 	}
 #menu a {
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 #menu {
