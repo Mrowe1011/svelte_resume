@@ -22,11 +22,11 @@
     <hr>
         <div id="navbar">
             <ul id="menu">
-                <li><a href="/" on:click|preventDefault={() => (menu = 1)}>Work Experience</a></li> 
-                <li><a href="/" on:click|preventDefault={() => (menu = 5)}>Education</a></li>
-                <li><a href="/" on:click|preventDefault={() => (menu = 2)}>Skills</a></li>
-                <li><a href="/" on:click|preventDefault={() => (menu = 3)}>Projects</a></li>
-                <li><a href="/" on:click|preventDefault={() => (menu = 4)}>Clubs</a></li>
+                <li><a href="/" on:click|preventDefault={() => (menu = 1, gtag('event', 'Navigation', {'navagate to':'Work Experience'}))}>Work Experience</a></li> 
+                <li><a href="/" on:click|preventDefault={() => (menu = 5, gtag('event', 'Navigation', {'navagate to':'Education'}))}>Education</a></li>
+                <li><a href="/" on:click|preventDefault={() => (menu = 2, gtag('event', 'Navigation', {'navagate to':'Skills'}))}>Skills</a></li>
+                <li><a href="/" on:click|preventDefault={() => (menu = 3, gtag('event', 'Navigation', {'navagate to':'Projects'}))}>Projects</a></li>
+                <li><a href="/" on:click|preventDefault={() => (menu = 4, gtag('event', 'Navigation', {'navagate to':'Clbus'}))}>Clubs</a></li>
             </ul>
         </div>
         <hr>

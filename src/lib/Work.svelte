@@ -12,7 +12,7 @@
 {#if ready}
 <div>
     <div in:fly="{{ x: 200, duration: 500 }}" id="Keybank">
-        <h1>Keybank DevOps Enginner Intern</h1>
+        <h1>Keybank DevOps Engineer Intern</h1>
         <h2>Jun 2022 - Aug 2022 (3 months)</h2>
         <ul class="menu">
             <li><a href="/" on:click|preventDefault={() => (keybank = 1)}>Job Description </a></li> 
@@ -28,6 +28,7 @@
             <li>GIT</li>
             <li>Jira</li>
             <li>Confluence</li>
+            <li>Service Now</li>
             <li>Python</li>
             <li>Jython</li>
             <li>Jenkin's Groovy</li>
@@ -51,7 +52,7 @@
         </ul>
         {#if kent === 1}
         <p>
-            I revived the Electronics lab within Kent State’s Design and Innovation Hub from a place of inactivity to a functional lab by marketing it to both students and faculty across Kent’s campus.  I created value across departments by collaborating with the school of fashion to create electronics that can be sewed.
+            I revived the Electronics lab within Kent State’s Design and Innovation Hub from a place of inactivity to a functional lab by marketing it to both students and faculty across Kent’s campus.  I created value across departments by collaborating with the school of fashion to create electronics that can be sewn.
         </p>
         {:else if kent === 2}
         <ul>
@@ -80,7 +81,7 @@
         </ul>
         {#if cohen === 1}
         <p>
-            I was entrusted to deploy, manage, and repair any user’s laptop or computer within the company. I created additional value by going beyond what was expected of me and created automation to streamline the windows deployment process.
+            I was entrusted to deploy, manage, and repair any user’s laptop or computer within the company. I created additional value by going beyond what was expected of me and created automation to streamline the Windows deployment process.
         </p>
         {:else if cohen === 2}
         <ul>
@@ -109,7 +110,7 @@
         </ul>
         {#if riverside === 1}
         <p>
-            I was entrusted to deploy, manage, and repair any user’s laptop or computer within the school district. I created additional value by going beyond what was expected of me and created automation to streamline the windows deployment process.
+            I was entrusted to deploy, manage, and repair any user’s laptop or computer within the school district. I created additional value by going beyond what was expected of me and created automation to streamline the Windows deployment process.
         </p>
         {:else if riverside === 2}
         <ul>
@@ -133,14 +134,11 @@
     ul.menu li{
         display : inline;
     }
-    img {
-        width: 50%;
-        height: 80%;
-        display: block;
-        margin: auto;
 
+
+    h2 {
+        font-weight: lighter;
     }
-
 .menu {
     width: 100%;
     display: flex;

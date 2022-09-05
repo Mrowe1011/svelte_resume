@@ -45,7 +45,9 @@
 {/if}
 
 <style>
-
+h2 {   
+    font-weight: lighter;
+}
     img {
         width: 50%;
         height: 80%;

@@ -30,6 +30,7 @@
         <li>Jira</li>
         <li>Confluence</li>
         <li>Bitbucket</li>
+        <li>Service Now</li>
         <li>GitLab</li>
         <li>Nexus Artifact Manager</li>
         <li>Artifactory Artifact Manager</li>
